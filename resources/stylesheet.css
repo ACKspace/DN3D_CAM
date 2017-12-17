@@ -1,0 +1,176 @@
+body, html
+{
+	height: 100%;
+	margin: 0;
+    overflow: hidden;
+}
+
+body
+{
+	background-color: #111;
+}
+
+#cam
+{
+	position: absolute;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 4.5vw 1.8vw 4.5vw;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+}
+
+#cam.pan
+{
+    /* TODO make a pan & scan animation for this to work */
+    background-size: cover;
+}
+
+#cam.off
+{
+    /* Ugly, but it works */
+    background-image: none !important;
+    background-color: initial;
+}
+
+#noise
+{
+    position: absolute;
+}
+
+.raster
+{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+
+.raster th
+{
+	font-family: "silkscreenbold", Courier, "Courier New", monospace;
+	font-size: 15vh;
+	color: #090;
+}
+
+.raster th,
+.raster .c,
+.raster .h
+{
+	height: 0.6vh;
+}
+
+.raster .d
+{
+    position: relative;
+	font-family: "silkscreennormal", Courier, "Courier New", monospace;
+	font-size: 4vh;
+	color: lightgray;
+	height: 100%;
+	vertical-align: bottom;
+}
+
+.raster th,
+.raster .c,
+.raster .v
+{
+	width: 0.6vh;
+}
+
+.h,.v
+{
+	background-color: lightgray;
+}
+
+.raster .rec
+{
+	display: inline-block;
+	width: 3vh;
+	height: 3vh;
+	color: red;
+	padding-left: 2vh;
+
+    -webkit-animation: blink 2s linear infinite;
+    -moz-animation: blink 2s linear infinite;
+    -ms-animation: blink 2s linear infinite;
+    -o-animation: blink 2s linear infinite;
+    animation: blink 2s linear infinite;
+}
+
+td > div
+{
+    position: absolute;
+    bottom: 0;
+
+    padding: .7vh;
+	display: inline-block;
+    background-color: rgba( 255,255,255, 0.5 );
+    color: black;
+}
+
+td > div.r
+{
+    right: 0;
+}
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+#help
+{
+    position: absolute;
+    top: 2vw;
+    left: 4.5vw;
+    right: 4.5vw;
+    bottom: 1.8vw;
+    padding: 1.1vw;
+
+	font-family: "silkscreennormal", Courier, "Courier New", monospace;
+	font-size: 4vh;
+	color: black;
+    background-color: rgba( 255,255,255, 0.5 );
+    display: none;
+}
+
+#help.show
+{
+    display: block;
+}
+
+

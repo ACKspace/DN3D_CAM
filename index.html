@@ -1,0 +1,92 @@
+<html>
+<head>
+<link rel="stylesheet" href="resources/fonts/stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="resources/stylesheet.css" type="text/css" charset="utf-8" />
+<script type="text/javascript" src="resources/cam.js"></script>
+</head>
+<body>
+<canvas id="noise"></canvas>
+<div id="cam" class="off">
+	<table class="raster">
+		<tr>
+			<td colspan="2"></td>
+			<th rowspan="3">SECURITY</th>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td class="c"></td>
+			<td class="h"></td>
+			<td class="h"></td>
+			<td class="c"></td>
+		</tr>
+		<tr>
+			<td class="v"></td>
+			<td></td>
+			<td></td>
+			<td class="v"></td>
+		</tr>
+		<tr>
+			<td class="v"></td>
+			<td class="d" colspan="3"><div class="r" id="camName"></div><div><div class="rec"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewbox="0 0 4 4">
+	<circle fill="currentColor" cx="2" cy="2" r="2" />
+</svg></div>
+<span>rec</span><span id="progress"></span></div></td>
+			<td class="v"></td>
+		</tr>
+		<tr>
+			<td class="c"></td>
+			<td class="h" colspan="3"></td>
+			<td class="c"></td>
+		</tr>
+	</table>
+</div>
+<div id="help" class="show">
+<table>
+<tr>
+<th>help</th>
+</tr>
+<tr>
+<td>esc</td><td>stop/eject</td>
+</tr>
+<tr>
+<td>space, right</td><td>next</td>
+</tr>
+<tr>
+<td>backspace, left</td><td>previous</td>
+</tr>
+<tr>
+<td>up</td><td>previous within space</td>
+</tr>
+<tr>
+<td>down</td><td>next within space</td>
+</tr>
+<tr>
+<td>0-9</td><td>navigate to bookmark</td>
+</tr>
+<tr>
+<td>&lt;ctrl&gt;0-9</td><td>store bookmark</td>
+</tr>
+<tr>
+<td>b</td><td>show bookmarks</td>
+</tr>
+<!--tr>
+<td>c</td><td>overview</td>
+</tr-->
+<tr>
+<td>d</td><td>debug</td>
+</tr>
+<tr>
+<td>h</td><td>toggle this help message</td>
+</tr>
+<tr>
+<td>r</td><td>reload image</td>
+</tr>
+<tr>
+<td>s</td><td>scan</td>
+</tr>
+<tr>
+<td>z</td><td>toggle zoom</td>
+</tr>
+</table>
+</div>
+</body>
